@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwindcss";
 
 :root {
   font-family: 'Manrope', sans-serif;
@@ -12,65 +9,123 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #213547;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  padding: 0px;
+}
+
+/* Dark mode styles */
+.dark {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+#root {
+  max-width: 100% !important; 
+  margin: 0 !important; 
+  padding: 0rem !important; 
+  text-align: center;
+  background-color: #F0F0F0;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #FF6F61;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  text-align: left;
+  background-color: #F0F0F0;
 }
 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+/* Manual dark mode styles for key elements */
+.dark body {
+  background-color: #121212 !important;
+  color: #F0F0F0 !important;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.dark #root {
+  background-color: #121212 !important;
+  color: #F0F0F0 !important;
+}
+
+/* Force dark mode styles for specific components */
+.dark .bg-white {
+  background-color: #1a1a1a !important;
+  color: #F0F0F0 !important;
+}
+
+.dark .text-gray-900 {
+  color: #F0F0F0 !important;
+}
+
+.dark .border-gray-300 {
+  border-color: #313131 !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: #2a2a2a !important;
+}
+
+.dark .text-gray-600 {
+  color: #a0a0a0 !important;
+}
+
+.dark .text-gray-500 {
+  color: #a0a0a0 !important;
+}
+
+.dark .bg-gray-200 {
+  background-color: #2a2a2a !important;
+}
+
+.dark .bg-gray-700 {
+  background-color: #404040 !important;
+}
+
+.dark .border-gray-600 {
+  border-color: #404040 !important;
+}
+
+.dark .text-gray-400 {
+  color: #a0a0a0 !important;
+}
+
+/* Additional dark mode styles for your specific components */
+.dark .bg-\[\#F0F0F0\] {
+  background-color: #1a1a1a !important;
+}
+.dark .bg-\[\#1a1a1a\] {
+  background-color: #F0F0F0 !important;
+  color: #1a1a1a !important;
+}
+
+.dark .border-\[\#e5e5e5\] {
+  border-color: #313131 !important;
+}
+
+.dark .text-\[\#121212\] {
+  color: #F0F0F0 !important;
+}
+
+.dark .bg-\[\#1c1c1c\] {
+  background-color: #2a2a2a !important;
 }
