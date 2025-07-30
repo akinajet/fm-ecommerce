@@ -1,13 +1,22 @@
-# React + Vite
+# FM E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, accessible, and performant single-page e-commerce app built with React, TypeScript, and Tailwind CSS. Users can browse, filter, and search products, view details, manage a shopping cart (with persistence), and toggle between light/dark themes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Browse a list of products
+- Filter & search by category, price range, and text
+- View product details
+- Add/remove items in a shopping cart
+- Cart persists in local storage
+- Responsive layout (mobile ↔ desktop)
+- Light/dark theme toggle
+- Centralized state management (React Context + useReducer)
+- Code-splitting & responsive images
+- Accessibility: semantic HTML, ARIA, keyboard navigation, WCAG AA contrast
+- Unit & E2E tests
 
 ---
 
